@@ -11,7 +11,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
 header {
     background: linear-gradient(90deg, #161b22 0%, #1e232a 100%);
     padding: 20px 30px;
@@ -69,10 +68,8 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* HERO */
 .hero {
     height: 75vh;
-    /* use local ConverScreen.jpg inside the images folder */
     background: linear-gradient(135deg, #1a1f2e3f 0%, #0d111741 50%), url('images/CoverScreen.png') center/cover no-repeat;
     position: relative;
     text-align: center;
@@ -180,7 +177,6 @@ nav a:hover::after {
     left: 100%;
 }
 
-/* MAIN SECTIONS */
 .section {
     max-width: 1150px;
     margin: 80px auto;
@@ -209,7 +205,6 @@ nav a:hover::after {
     border-radius: 2px;
 }
 
-/* CARD LAYOUT */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +254,6 @@ nav a:hover::after {
     font-size: 15px;
 }
 
-/* TECH STACK SECTION */
 .tech-container {
     display: flex;
     flex-wrap: wrap;
@@ -326,7 +320,6 @@ nav a:hover::after {
     font-size: 24px;
 }
 
-/* TRAILER */
 .trailer {
     text-align: center;
 }
@@ -365,7 +358,6 @@ nav a:hover::after {
     border-color: #58a6ff;
 }
 
-/* DEVELOPERS */
 .dev-container {
     display: flex;
     justify-content: center;
@@ -435,7 +427,6 @@ nav a:hover::after {
     font-size: 14px;
 }
 
-/* FOOTER */
 footer {
     background: linear-gradient(180deg, #161b22 0%, #0d0f14 100%);
     padding: 40px 25px;
@@ -501,7 +492,6 @@ footer p {
     margin-top: 20px;
 }
 
-/* EMBED MODAL */
 .embed-modal {
     position: fixed;
     inset: 0;
@@ -544,16 +534,14 @@ footer p {
 }
 .embed-close:hover { color: #58a6ff; }
 
-/* iframe fills content area */
 .embed-modal-content iframe {
     width: 100%;
-    height: calc(100% - 48px); /* leave room for fallback line */
+    height: calc(100% - 48px);
     border-radius: 8px;
     border: 1px solid #58a6ff33;
     background: #000;
 }
 
-/* fallback link under iframe */
 .embed-fallback {
     margin-top: 8px;
     text-align: center;
@@ -565,13 +553,11 @@ footer p {
     text-decoration: underline;
 }
 
-/* small screens */
 @media (max-width: 720px) {
     .embed-modal-content { height: 92vh; max-width: 100%; padding: 8px; }
     .embed-modal-content iframe { height: calc(100% - 48px); }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
